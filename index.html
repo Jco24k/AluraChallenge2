@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Alura Challenge 2</title>
+</head>
+
+<body>
+    <header>
+        <img id="icono" src="imagenes/Logo.png" alt="Logo Alura" title="alura" />
+    </header>
+    <main id="iniciando">
+        <button  id="iniciar" class="botones">Inciar Juego</button>
+        <button  id="agregar" class="botones">Agregar palabra</button>
+    </main>
+    <div id="activar-juego">
+        <div id="juego">
+            <div id="hola"><canvas id="pizarra" width="250" height="350" style="background-color: aquamarine;"></canvas></div>
+            <div id="mensaje">
+
+            </div>
+        </div>
+
+
+        <div id="palabra_secreta">
+        </div>
+        <div>
+            <textarea id="texto_incorrecto" class="texto" spellcheck="false"
+                readonly="true"></textarea>
+        </div>
+        <div>
+            <button  id="nuevo-juego" class="botones">Nuevo Juego</button>
+            <button  id="desistir" class="botones">Desistir</button>
+        </div>
+    </div>
+    <main id="menu">
+        <textarea  id="texto" spellcheck="false" placeholder="Ingrese el texto Aqui" rows="7" 
+            cols="50"></textarea>
+        <div>
+            <div id="exclamacion">
+                <p><img src="imagenes/bi_exclamation-circle-fill.png" /> Max. 8 caracteres</p>
+            </div>
+            <div id="btn-iniciar">
+                <button id="izquierda" class="botones">Guardar y
+                    empezar</button>
+                <button id="derecha" class="botones">Cancelar</button>
+            </div>
+        </div>
+
+    </main>
+    <div id="logo_autor">
+        <img id="creador" src="imagenes/creador.png">
+    </div>
+    <!--canvas  es para diseñar-->
+    <script src="./javascript/canvas.js"></script>
+    <script src="./javascript/evento_teclado.js"></script>
+    <script src="./javascript/ocultar.js"></script>
+    <script src="./javascript/limpiar_atributos.js"></script>
+</body>
+
+</html>
