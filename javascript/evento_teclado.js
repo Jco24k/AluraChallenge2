@@ -22,8 +22,6 @@ function activar_key() {
   aleatorio = Math.round(Math.random() * (nombres.length - 1));
   longitud = nombres[aleatorio].length;
   palabra = nombres[aleatorio];
-  console.log(nombres);
-  console.log(palabra);
   contador = 2;
   letras = crearElement(letras, palabra);
   iniciar_canvas();

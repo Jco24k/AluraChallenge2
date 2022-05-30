@@ -52,11 +52,8 @@ validar_texto.addEventListener("keyup", function (event) {
 });
 
 function mayusculas(texto) {
-    //FORMA 1
     texto = texto.toUpperCase();
     if (texto.length != 9) {
-
-        console.log(texto);
         let validos = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
         let text = ""
         for (let i of texto) {
