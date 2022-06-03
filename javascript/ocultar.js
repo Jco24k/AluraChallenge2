@@ -47,7 +47,7 @@ function ocultarBox(valor_menu,valor_juego,valor_inicio){
 
 var validar_texto = document.querySelector("#texto");
 validar_texto.setAttribute("maxLength",8)
-validar_texto.addEventListener("keyup", function (event) {
+validar_texto.addEventListener("input", function (event) {
     this.value = mayusculas(event.target.value);
 });
 

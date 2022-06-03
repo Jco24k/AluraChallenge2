@@ -26,7 +26,7 @@ function activar_key() {
   letras = crearElement(letras, palabra);
   iniciar_canvas();
   var terminar_juego = false;
-  document.addEventListener("keyup", (evento) => {
+  document.onkeyup = function(evento){
     //VALIDAR SOLO DATOS ALFABETICOS
     let charCode = evento.keyCode;
     var verificar =
@@ -65,7 +65,7 @@ function activar_key() {
         }
       }
     }
-  });
+  }
 }
 function juego_finalizado(ganador) {
   var mensaje = document.getElementById("mensaje");
